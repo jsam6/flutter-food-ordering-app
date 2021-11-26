@@ -11,14 +11,16 @@ class Body extends StatelessWidget {
 
 	@override
 	Widget build(BuildContext context) {
-		return Column(
+		return SingleChildScrollView(
+            child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-			children: <Widget>[
-				SearchBox(onChanged: (value) {},),
-				CategoryList(),
-				ItemList(),
-                DiscountCard(),
-			],
-		);
+                children: <Widget>[
+                    SearchBox(onChanged: (value) {},),
+                    CategoryList(),
+                    ItemList(),
+                    DiscountCard(),
+                ],
+            ),
+        );
 	}
 }

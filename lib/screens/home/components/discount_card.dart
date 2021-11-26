@@ -18,7 +18,7 @@ class DiscountCard extends StatelessWidget {
 				style: TextStyle(fontWeight: FontWeight.bold, color: TEXT_COLOR),),
 				Container(
 					margin: EdgeInsets.symmetric(vertical: 20),
-					width: double.infinity,
+					width: double.infinity, // double infinity means it covers the available width
 					height: 166,
 					decoration: BoxDecoration(
 						borderRadius: BorderRadius.circular(10),
